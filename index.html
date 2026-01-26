@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/babel">
+
+        function Nav() {
+            return <div id="span">
+
+                <a href="">menu</a>
+            </div>
+        }
+
+        function Logo() {
+            return <div id="logo">
+                <img src="123.png" alt="" />
+            </div>
+        }
+
+        function Header() {
+            return <div id="header">
+
+                <div id="logo">
+
+                    <Logo />
+                </div>
+                <div id="navBar">
+
+                    <Nav />
+                    <Nav />
+                    <Nav />
+                </div>
+
+            </div>
+        }
+
+
+        function Card1() {
+            return <div id="card1">
+                <img src="" alt="">
+                    <p></p>
+
+            </div>
+        }
+
+
+        function LeftMenu() {
+            return <div id="leftmenu">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+
+            </div>
+        }
+
+        function Main() {
+            return <div id="main">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore ipsa, quae perferendis excepturi qui omnis! Ipsum, sint. Ullam eligendi exercitationem ex quas quae quis rerum, aperiam aspernatur quod asperiores eum.</p>
+            </div>
+
+        }
+
+        function Footer() {
+            return <div id="footer">
+                <p>Contacts</p>
+                <p>About</p>
+            </div>
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        ReactDOM.createRoot(document.getElementById("root"))
+            .render(<div>
+                <Header />
+                <LeftMenu />
+                <Main />
+                <Footer />
+            </div>
+            );
+
+    </script>
+</body>
+
+</html>
