@@ -44,9 +44,16 @@
 
 
         function Card1() {
-            return <div id="card1">
-                <img src="" alt=""/>
-                    <p></p>
+            return <div id="card">
+                <img src="./img1.jpg" alt="minion" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        }
+
+        function Card2() {
+            return <div id="card">
+                <img src="./img2.jpg" alt="dog" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
             </div>
         }
@@ -67,7 +74,8 @@
 
         function Main() {
             return <div id="main">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore ipsa, quae perferendis excepturi qui omnis! Ipsum, sint. Ullam eligendi exercitationem ex quas quae quis rerum, aperiam aspernatur quod asperiores eum.</p>
+                <Card1 />
+                <Card2/>
             </div>
 
         }
